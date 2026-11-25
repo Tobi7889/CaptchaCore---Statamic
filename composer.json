@@ -1,0 +1,59 @@
+{
+    "name": "captchacore/statamic",
+    "description": "Privacy-friendly CAPTCHA and bot defense for Statamic forms — proof of work instead of image puzzles, no tracking cookies",
+    "type": "statamic-addon",
+    "license": "MIT",
+    "keywords": [
+        "statamic",
+        "statamic-addon",
+        "captcha",
+        "spam",
+        "spam-protection",
+        "bot-protection",
+        "forms",
+        "proof-of-work",
+        "privacy"
+    ],
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^5.0|^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "CaptchaCore\\Statamic\\": "src/"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "CaptchaCore",
+            "description": "Privacy-friendly CAPTCHA and bot defense for Statamic forms",
+            "slug": "captchacore-statamic"
+        },
+        "laravel": {
+            "providers": [
+                "CaptchaCore\\Statamic\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CaptchaCore\\Statamic\\Tests\\": "tests/"
+        }
+    },
+    "homepage": "https://captchacore.eu",
+    "authors": [
+        {
+            "name": "SpeedIT Solutions",
+            "homepage": "https://captchacore.eu"
+        }
+    ],
+    "support": {
+        "docs": "https://captchacore.eu/docs",
+        "email": "info@captchacore.eu"
+    }
+}
